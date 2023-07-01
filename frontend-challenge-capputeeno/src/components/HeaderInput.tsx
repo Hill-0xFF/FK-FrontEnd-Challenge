@@ -1,17 +1,13 @@
 import styled from 'styled-components';
 
-interface HeaderInputProps {
-  placeholder: string,
-}
-
-const TagInput = styled.input`
+export const TagInput = styled.input`
   display: inline-flex;
   padding: 9px 16px;
   justify-content: center;
   align-items: flex-start;
   width: 352px;
   height: 42px;
-  color: var(--input-text-color-black);
+  color: var(--input-text-color-cyan);
   border-radius: 1rem;
   border: none;
   background: var(--input-background-color);
@@ -22,9 +18,3 @@ const TagInput = styled.input`
   font-weight: 400;
   line-height: 22px;
 `;
-
-export default function HeaderInput({placeholder}: HeaderInputProps) {
-  return (
-    <TagInput placeholder={placeholder}/>
-  );
-}

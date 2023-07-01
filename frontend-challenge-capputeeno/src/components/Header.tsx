@@ -1,15 +1,14 @@
-"use client";
+'use client';
 
 import React from 'react';
 import styled from 'styled-components';
-import HeaderInput from './HeaderInput';
-
-import {Saira_Stencil_One} from 'next/font/google'
+import { Saira_Stencil_One } from 'next/font/google';
+import { TagInput } from './HeaderInput';
 
 const saira_stencil = Saira_Stencil_One({
   weight: ['400'],
   subsets: ['latin'],
-})
+});
 
 const TagHeader = styled.header`
   display: flex;
@@ -19,7 +18,8 @@ const TagHeader = styled.header`
   height: 80px;
   flex-shrink: 0;
   padding: 29px 160px;
-`
+  border: solid 3px cyan;
+`;
 
 const LogoText = styled.a`
   color: var(--logo-text-color);
@@ -27,14 +27,14 @@ const LogoText = styled.a`
   font-style: normal;
   line-height: 150%;
   cursor: pointer;
-`
+`;
 
 export default function Header() {
   return (
     <TagHeader>
       <LogoText className={saira_stencil.className}>Capputeeno</LogoText>
       <div>
-        <HeaderInput placeholder='Procurando por algo especifico po?' />
+        <TagInput placeholder="Procurando por algo especifico?" />
       </div>
     </TagHeader>
   );
