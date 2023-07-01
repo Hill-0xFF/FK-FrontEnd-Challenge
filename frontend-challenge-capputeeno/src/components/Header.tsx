@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import HeaderInput from './HeaderInput';
 
 import {Saira_Stencil_One} from 'next/font/google'
 
@@ -14,7 +15,7 @@ const TagHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1440px;
+  width: 100%;
   height: 80px;
   flex-shrink: 0;
   padding: 29px 160px;
@@ -32,7 +33,9 @@ export default function Header() {
   return (
     <TagHeader>
       <LogoText className={saira_stencil.className}>Capputeeno</LogoText>
-      <div></div>
+      <div>
+        <HeaderInput placeholder='Procurando por algo especifico po?' />
+      </div>
     </TagHeader>
   );
 }

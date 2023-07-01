@@ -2,6 +2,11 @@
   --max-width: 1100px;
   --border-radius: 1rem;
   --logo-text-color: #5D5D6D;
+  --input-text-color: #737380;
+  --input-text-color1: #991111;
+  --input-text-color-whitesmoke: #cdcdcd;
+  --input-text-color-black: #000;
+  --input-background-color: #F3F5F6;
 }
 
 * {
