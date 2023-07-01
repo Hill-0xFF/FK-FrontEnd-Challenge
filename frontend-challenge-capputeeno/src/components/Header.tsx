@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Saira_Stencil_One } from 'next/font/google';
-import { TagInput } from './HeaderInput';
+import { InputContainerDiv } from './HeaderInput';
 
 const saira_stencil = Saira_Stencil_One({
   weight: ['400'],
@@ -34,7 +34,7 @@ export default function Header() {
     <TagHeader>
       <LogoText className={saira_stencil.className}>Capputeeno</LogoText>
       <div>
-        <TagInput placeholder="Procurando por algo especifico?" />
+        <InputContainerDiv />
       </div>
     </TagHeader>
   );

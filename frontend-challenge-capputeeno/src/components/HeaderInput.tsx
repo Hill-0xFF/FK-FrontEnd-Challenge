@@ -1,3 +1,6 @@
+import React from 'react';
+import SearchLoupeICon from '@/app/icons/SearchLoupeICon';
+import { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 export const TagInput = styled.input`
@@ -18,3 +21,27 @@ export const TagInput = styled.input`
   font-weight: 400;
   line-height: 22px;
 `;
+
+const InputContainer = styled.div`
+  position: relative;
+  width: 352px;
+  
+  svg {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+`;
+
+
+export function InputContainerDiv() {
+  return <div>
+    <InputContainer>
+      <TagInput placeholder='Procurando por algo especifico?'/>
+      <SearchLoupeICon />
+    </InputContainer>
+  </div>;
+}
