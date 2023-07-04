@@ -7,6 +7,7 @@
   --input-text-color-whitesmoke: #cdcdcd;
   --input-text-color-black: #000;
   --input-background-color: #F3F5F6;
+  --delete-color: #DE3838;
 }
 
 * {

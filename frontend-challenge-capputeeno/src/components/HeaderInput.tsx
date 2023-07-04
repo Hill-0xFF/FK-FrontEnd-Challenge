@@ -1,7 +1,8 @@
 import React from 'react';
-import SearchLoupeICon from '@/app/icons/SearchLoupeICon';
+import SearchLoupeICon from '@/app/icons/SearchLoupeIcon';
 import { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
+import CartControl from './CartControl';
 
 export const TagInput = styled.input`
   display: inline-flex;
@@ -36,12 +37,12 @@ const InputContainer = styled.div`
   }
 `;
 
-
 export function InputContainerDiv() {
   return <div>
     <InputContainer>
       <TagInput placeholder='Procurando por algo especifico?'/>
       <SearchLoupeICon />
+      <CartControl />
     </InputContainer>
   </div>;
 }
